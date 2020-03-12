@@ -1,0 +1,207 @@
+﻿@charset "utf-8"; 
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0;}
+body { font:12px/1.6 arial; color:#555; } 
+input, img { vertical-align:center; }
+	
+#wrapper { margin:0; position:relative; width:100%; height:4400px; /* outline:3px solid purple; */ }
+
+/* header */
+/*  header 로고 */
+#header { position:relative; width:100%; height:150px; background:rgba(245,245,245,1); z-index:99;  }	
+	#header h1 { height:100px; text-align:center; border:2px solid #eee; }
+		#header h1 a { z-index:999;  }
+		#header h1 img { width:250px; margin-top:20px; z-index:99999;}/* 로고크기 */
+		.header-nav { float:right; }/* 로그인 줄*/
+		.search input[type="text"] { position:absolute; left:1300px; top:30px;  width:260px; height:36px; background:#fff; border:none; margin-top:7px; padding-left:20px; }
+			.search_box {  width:100%; height:100px;  }
+				#search_img { position:absolute; top:40px; left:1600px; }
+					.search li { float:left; font-size:20px; padding-right:20px; transition:all 0.2s; }
+						.search li:hover { transform:scale(1.2); }
+
+/*  header 주메뉴 */							
+	.menuBack { position:absolute; left:0px; width:100%; height:300px; z-index:-99999; background:#eee; display:none;/*  */}  
+	
+	#gnb_nav { position:relative; width:100%; height:46px; z-index:10000; /*outline:2px solid orange; */ }
+	#gnb { width:1000px; margin:0 auto; z-index:10000;}
+		#gnb>li { float:left; width:125px; height:46px; line-height:46px; font-family:Nanum Gothic;  } /* 주 메뉴 */
+			#gnb>li span { font-size:14px; text-align:center; display:block; transition:all 0.5s;   }
+				#gnb>li:hover span { background:#fff; }
+	#gnb .sub { position:relative; width:100%; height:300px; background:#eee; z-index:10000;  } /* 하위 메뉴*/
+		#gnb .sub ul { float:left; width:250px; height:300px;  }
+			#gnb .sub ul:nth-child(1) { margin-left:450px; }
+				#gnb>li a { font-size:12px; font-family:Nanum Gothic; }
+					.sub ul li a { padding-left:43px; }
+		#gnb .sub_1 {  }	
+		#gnb .sub_2 { position:absolute; left:0px; }	
+		#gnb .sub_3 { position:absolute; left:0px; }
+		#gnb .sub_4 { position:absolute; left:0px; }	
+		#gnb .sub_5 { position:absolute; left:0px; }	
+		#gnb .sub_6 { position:absolute; left:0px; }	
+		#gnb .sub_7 { position:absolute; left:0px; }	
+		#gnb .sub_8 { position:absolute; left:0px; }
+			.sub_1 .navigation_image .stacking{ background:url(../img/stacking_1.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 5px rgba(0,0,0,0.5); }	
+			.sub_2 .navigation_image .cham { background:url(../img/cham_2.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }	
+			.sub_3 .navigation_image .ring { background:url(../img/ring_3.jpg)no-repeat center center/cover;position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px;  box-shadow:1px 1px 10px rgba(0,0,0,0.5); }		
+			.sub_4 .navigation_image .bangle { background:url(../img/bangle_4.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }	
+			.sub_5 .navigation_image .neck { background:url(../img/neck_5.jpg)no-repeat center center/cover;position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px;  box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+			.sub_6 .navigation_image .earring { background:url(../img/earring_6.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px;  box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+			.sub_7 .navigation_image .gift { background:url(../img/gift_7.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+			.sub_8 .navigation_image .club { background:url(../img/club_8.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+				
+		 .sub_1, .sub_2, .sub_3, .sub_4, .sub_5, .sub_6, .sub_7, .sub_8 { display:none; }
+	
+/* slider */	
+#container { position:relative; top:0px; width:100%; height:4300px;  z-index:1;  }
+/* 첫 화면 슬라이드 이미지 */
+#main_slider { position:relative; width:100%; height:800px; /* outline:2px solid orange;  */ }
+	.slider_child1 { position:absolute; width:100%; height:800px; background:url(../img/first_img.jpg)no-repeat center center/cover; background-size:2100px; }
+	.slider_child2 { position:absolute; width:100%; height:800px; background:url(../img/second_img.jpg)no-repeat center center/cover; background-size:2100px; }
+	.slider_child3 { position:absolute; width:100%; height:800px; background:url(../img/third_img.jpg)no-repeat center center/cover; background-size:1900px; }
+		.slider_child span { position:absolute; top:550px; left:500px; cursor:pointer; font-size:15px; color:#fff; border:1px solid #fff; padding:10px 50px; font-family: sans-serif; }
+		.slider_child .logo_txt { position:absolute; top:450px; left:500px; }
+			.slider_child .logo_txt img {  width:50%; }
+				.slider_child span:hover { background:#fff; color:#1b1b1b; font-weight:bold; }
+/* 첫 화면 슬라이드 버튼 */				
+	
+		.icon { position:absolute; bottom:0; left:50%; margin-left:-55px; cursor:pointer; z-index:999 }
+		.icon li { float:left; margin:8px; }
+		
+	/* .slider_child1:hover { transform:scale(1); }
+		.slider_child2:hover { transform:scale(1); } */
+				
+/* slider MD추천 */	
+#slider_bg { position:relative; width:100%; height:650px; background:#faf8f7; /* */ }
+	.slider_tit { position:absolute; width:1000px; left:50%; margin-left:-500px; top:100px; text-align:center; }
+		.slider_tit p { font-size:40px; letter-spacing:10px; font-family: Playfair Display, serif; font-weight:bold; }
+		.slider_tit span { font-size:20px; color:#aaa; font-family: sans-serif; }
+#slider { position:relative; top:300px;width:1250px; height:300px; margin:0 auto; }
+	.btn { width:50px; height:50px; position:absolute; top:50%; margin-top:-25px; border:0px; z-index:999; }
+		.btn img { width:25px; height:25px; cursor:pointer; }
+			.btn:hover { background:#e6d9d6; border:0px; } 
+				.btn_prev { left:-100px; z-index:999;  }
+				.btn_next { right:-100px; z-index:999;  }
+/* slider over 했을 때 */	
+	.imgview { position:relative; margin-top:50px; z-index:200; height:350px; border:0px solid #ccc; margin:0 auto; cursor:pointer; overflow:hidden;  /**/}
+		.imgview li .img_over { position:absolute; top:37.5px; width:240px; height:225px; }
+		.imgview li:hover .img_over {  opacity:0.4; background:#000; transition:all 0.5s;  }
+		.imgview img { width:225px; height:225px; margin:37.5px 12.5px; }
+		.imgwrap { width:6250px; /*250*25=6250*/ position:absolute; top:0; left:0; z-index:100; }
+			.imgwrap li { float:left; }
+				.imgwrap li p { position:absolute; top:290px; width:240px; height:50px;  line-height:50px; font-size:24px; text-align:center; font-family:Righteous;  transition:all 0.5s; opacity:0; }
+					.imgwrap li:hover p { position:absolute; top:260px; background:#fff; opacity:1; }
+						.imgwrap li span { font-size:20px; text-align:center; }
+						
+/* 레이어링 스타일(글자) */	
+#scene_layering { position:relative; top:100px; width:100%; height:800px; /* outline:5px solid black ; */ }
+	#scene_layering .line { position:absolute; right:300px; top:33px;  }
+	#scene_layering h1 { float:left; font-size:50px; letter-spacing:2px; margin-left:100px; font-family: sans-serif;  }
+	#scene_layering p { clear:both; font-size:18px; margin-left:100px; margin-bottom:50px; font-family: sans-serif; }
+	#scene_layering span { font-weight:bold; }
+	/* 레이어링 스타일 이미지1 */				
+		#neck_img { position:absolute; left:100px; z-index:10; }
+			#neck_img .layer_neck_1 { width:700px; height:525px; background:#000; box-shadow:10px 10px 15px #8b8b8b; } 
+				.neck_black { position:absolute; transition:all 0.35s; background:rgba(0, 0, 0, 0.65); top:0px; width:700px; height:525px; opacity:0; z-index:20; }
+			#neck_img:hover img { opacity:0.4; }
+			#neck_img:hover .neck_black { opacity:1; transform:scale(0.93); }
+				.neck_txt { position:absolute; top:0px; transition:all 0.35s; padding:0px 50px; box-sizing: border-box; width:700px; height:525px; z-index:100; }
+				.neck_txt h2 { position:absolute; top:50%; transition:all 0.35s; opacity:0; color:#fff; font-size:25px; font-family: sans-serif; }
+				.neck_txt h3 { position:absolute; top:50%; transition:all 0.35s; opacity:0; transform: translateY(60px); color:#fff; font-size:25px; font-family: sans-serif; }
+				.neck_txt:hover h2 { top:30%; opacity:1;}
+				.neck_txt:hover h3 { top:30%; opacity:1;}
+				.layer_neck_2 img { width:300px; position:absolute; top:0px; right:20px; transition:all 0.35s;z-index:100; opacity:0; }
+				#neck_img:hover .layer_neck_2 img { transform:scale(0.7); opacity:1;  }
+	/* 레이어링 스타일 이미지2 */	
+		#neck_img2 { position:absolute; top:252.5px; left:850px; z-index:10; }	
+			#neck_img2 .layer_neck_3 { width:300px; height:368px;  background:#000;  } 
+				.neck_black_2 { position:absolute; transition:all 0.35s; background:rgba(0, 0, 0, 0.55); top:0px; left:0px; width:300px; height:368px; opacity:0; z-index:100; }	
+			#neck_img2:hover img { opacity:0.5; }	
+			#neck_img2:hover .neck_black_2 { opacity:1; transform:scale(0.9); }
+				.neck_txt_2 { position:absolute; top:0px; transition:all 0.35s; padding:0px 50px; box-sizing: border-box; width:300px; height:368px; z-index:100; }
+				.neck_txt_2 h2 { position:absolute; top:250px; left:30px; transition:all 0.35s; opacity:0; color:#fff; font-size:16px; font-family: sans-serif; }
+				.neck_txt_2 h3 { position:absolute; top:250px; left:30px; transition:all 0.35s; opacity:0; transform: translateY(40px); color:#fff; font-size:17px; font-family: sans-serif; }	
+					.neck_txt_2:hover h2 { top:100px; opacity:1;}
+					.neck_txt_2:hover h3 { top:100px; opacity:1;}
+					.layer_neck_4 img { width:150px; position:absolute; top:150px; left:160px; transition:all 0.35s; z-index:100; opacity:0; }
+					#neck_img2:hover .layer_neck_4 img { transform:scale(0.5); opacity:1;  }
+	/* 레이어링 스타일 이미지2 */	
+	#neck_img3 { position:absolute; top:252.5px; left:1150px; z-index:10; }	
+		#neck_img3 .layer_neck_5 { width:300px; height:368px; background:#000;  } 
+			.neck_black_3 { position:absolute; transition:all 0.35s; background:rgba(0, 0, 0, 0.8); top:0px; left:0px; width:300px; height:368px; opacity:0; z-index:100; }	
+		#neck_img3:hover img { opacity:3; }	
+		#neck_img3:hover .neck_black_3 { opacity:1; transform:scale(0.9); }
+		.neck_txt_3 { position:absolute; top:0px; transition:all 0.35s; padding:0px 50px; box-sizing:border-box; width:300px; height:368px; z-index:100; }
+			.neck_txt_3 h2 { position:absolute; top:250px; left:30px; transition:all 0.35s; opacity:0; color:#fff; font-size:16px; font-family: sans-serif; }
+			.neck_txt_3 h3 { position:absolute; top:250px; left:30px; transition:all 0.35s; opacity:0; transform: translateY(40px); color:#fff; font-size:17px; font-family: sans-serif; }	
+			.neck_txt_3:hover h2 { top:100px; opacity:1;}
+			.neck_txt_3:hover h3 { top:100px; opacity:1;}
+			.layer_neck_6 img { width:150px; position:absolute; top:120px; left:160px; transition:all 0.35s; z-index:100; opacity:0; }
+			#neck_img3:hover .layer_neck_6 img { transform:scale(0.6); opacity:1;  }
+		
+ /*	레이어링 스타일(반지) */
+#jewelry_layering_1 { position:relative; top:100px; width:100%; height:1000px; }
+#jewelry_layering_1 .txt { position:absolute; left:100px; color:#000; font:bold 50px "poiret one"; opacity:0.6; z-index:102; }
+#jewelry_layering_1 p.txt span { font-size:90px; }
+
+#jewelry_ring { position:relative; left:50%; margin-left:-600px; top:100px; width:1200px;transition:all 1s; z-index:100; }
+#jewelry_ring:hover { top:170px; }
+#jewelry_ring>div { width:100%; height:60px; border-bottom:2px solid #c28e83; transition:all 1.5s; overflow:hidden; position:relative; cursor:pointer;}
+#jewelry_ring>div:hover { height:400px; }
+#jewelry_ring .box>div { position:absolute; right:500px; top:0px; opacity:0; transition:all 1.5s;  }
+#jewelry_ring>div:hover .love_img { opacity:1; }
+
+#jewelry_ring .love_price { position:absolute; right:300px; top:330px; font:bold 25px "poiret one"; color:#111; }
+#jewelry_ring .love_buy { position:absolute; padding:10px 40px; background:#c28e83; right:100px; top:330px; font:bold 15px "poiret one"; color:#111; z-index:200;}
+#jewelry_ring .love_buy:hover { color:#fff; }
+#jewelry_ring .love_line img { position:absolute; top:20px;  }
+#jewelry_ring .love_txt { position:absolute; text-align:justify; color:#000; line-height:30px; right:20px; top:80px; width:450px; height:400px; font-size:14px; font-family: sans-serif;   }
+#jewelry_ring .love_txt span { font-weight:bold; font-size:16px; color:#000; }
+
+#jewelry_ring h2 { position:absolute; bottom:-3px; left:0px; font:bold 30px "poiret one"; color:#111; transition:all 1s; z-index:110;}
+#jewelry_ring>div:hover h2 { bottom:80px; font-size:80px; color:#fff; left:1200px;}
+
+#jewelry_ring>div>img { position:absolute; bottom:5px; right:0px; transition:all 0.5s; width:30px;}
+#jewelry_ring>div:hover>img { transform:rotate(360deg); width:400px; left:0px;}
+
+#ring_bg { position:absolute; bottom:0px; width:100%; height:1000px; background:url(../img/ring_layered_bg2.jpg)no-repeat center top/cover; background-size:2000px; opacity:0.5;  }
+
+/* 레이어링 스타일(팔찌) */
+#jewelry_layering_2 { position:relative; top:200px; width:100%; height:800px; overflow:hidden; }
+#jewelry_layering_2 .txt_2 { position:absolute; left:0px; color:#000; font:bold 50px "poiret one"; opacity:0.6; z-index:102; }
+#jewelry_layering_2 p.txt_2 span { font-size:90px; }
+	 .arrow_img>li { position:absolute; top:50%; margin-top:-30px; font-size:40px; z-index:1000; }/* 팔찌 좌우 화살표 */
+		.main_arrow_left { left:0px; }
+		.main_arrow_right { right:0px; }
+	.jewelry_bangle { position:absolute; width:2856px; top:100px;  }
+	.jewelry_bangle>div { position:absolute; box-sizing:border-box; }
+		.case  { width:400px; height:700px; margin:0px 38px; box-sizing:border-box; overflow:hidden; }
+		.case>img { width:400px; height:400px; box-shadow:-5px -5px 5px #e5e5e5; transition:all 0.5s; cursor:pointer; }
+		.case>img:hover { transform:scale(1.1); }
+		.textbox { position:absolute; top:398px; width:398px; height:300px; border:1px solid #e5e5e5; background:#fff; box-sizing:border:box; }
+	
+		.case h3 { font-size:16px; font-family: sans-serif; letter-spacing:-1px; text-align:center; bottom:0px; margin-top:180px; }
+		.moments_img {  }
+		.moments_img img { position:absolute; left:50%; margin-left:-75px; width:160px; top:10px;  }
+		.moments_price { position:absolute; width:400px; text-align:center; bottom:50px; font:bold 20px "poiret one"; color:#111; }
+		.moments_buy { position:absolute; cursor:pointer; left:120px; bottom:0px;  padding:10px 40px; background:#c28e83; font:bold 15px "poiret one"; color:#111;  }
+			.moments_buy:hover { color:#fff; }
+			
+#footer { clear:both; position:relative; width:100%; height:100px;  } 
+	.foot { position:absolute; width:100%; height:100px; background:#f7f7f9; }
+	#footer  h1 { float:left; position:absolute; left:500px; width:100px; margin-top:20px; }
+	#footer  h1 img { width:40px; }
+	address { font-style:normal; text-align:center;  font-size:14px; padding:20px 0px; z-index:100;  }
+/* sns */	
+	#sns { position:absolute; top:50px; right:400px;  }
+	#sns li  { float:left; padding:10px; }
+	#sns li i { font-size:20px; color:#111; opacity:0.7; transition:all 0.5s;}
+	#sns li i:hover { transform:scale(1.2); opacity:1;}
+
+
+
+

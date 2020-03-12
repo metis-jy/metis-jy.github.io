@@ -1,0 +1,85 @@
+﻿@charset "utf-8";
+/* reset */
+* { margin:0; padding:0; }
+li { list-style:none; }
+img { border:0; vertical-align:middle; }
+a { text-decoration:none; color:#333; }
+address { font-style:normal; }
+
+
+body, html { height:100%;  margin:0; font:400 15px/1.8 "맑은 고딕", sans-serif; color: #777;  }
+
+/* wrapper */
+#wrapper { margin:0; position:relative; }	
+
+
+/* header */
+#header { position:relative; width:100%; height:100px; background:rgba(245,245,245,1); }	
+	#header h1 { float:left; padding-top:20px; height:80px; line-height:80px; z-index:999; }
+		.header-nav { position:absolute; top:0px;  width:100%; height:30px; z-index:200; background:rgba(235,235,235,0.8); z-index:9999; } /*로그인 줄*/
+			.util { float:right; margin-right:100px; }
+				.util li { display:inline; padding-right:30px; }
+					.util li:hover a { color:#f30d5e;  }
+		#gnbBack { background:rgba(235,235,235,1); width:100%; height:300px; position:absolute; top:100px; left:0; z-index:100; display:none; }
+		#gnb { position:relative; left:0px; width:100%; z-index:200; padding-top:50px; padding-left:300px; box-sizing:border-box;  }
+			#gnb>li { float:left; width:200px; height:30px;  }
+				#gnb>li a { float:left; width:200px; height:50px; line-height:30px; text-align:center; font-size:14px; font-weight:bold; }
+					#gnb>li>a:hover { text-decoration:underline;  }
+/* 메뉴 서브페이지 */					
+		#gnb .sub { }
+		#gnb>li .sub { position:absolute; top:100px; width:200px; text-align:center; margin-top:10px; display:none;  z-index:300; }
+			#gnb>li .sub a {  float:left; width:200px; height:30px; line-height:30px; text-align:center; font-size:14px; }
+				#gnb>li .sub a:hover { color:#f30d5e; }		
+/* gnb 예약버튼 */
+					.reservation { position:absolute; top:40px; right:200px; width:300px; height:50px; line-height:70px;  }
+						.reservation li { float:left; }
+							.reservation li a { color:#fff; font-family:Noto Sans KR; }
+								.reservation li.title_btn { width:100px; height:50px; line-height:50px; background:yellow; text-align:center; }
+									.reservation li.title_btn:nth-child(1) { background:#ff7f02;  }
+									.reservation li.title_btn:nth-child(2) { background:#892fd5;  }
+									.reservation li.title_btn:nth-child(3) { background:#94c743;  }	
+
+/* header_sub */
+#header_sub { position:relative; width:100%; height:100%;  }
+	#header_sub{ width:100%; height:600px; background:url(../img/attr_roller3.jpg) no-repeat top center/cover; }
+		#header_sub h2 { font-size:60px; padding-top:100px; font-family:Noto Sans KR; letter-spacing:10px; color:#fff; text-align:center;  }
+			.attr_title { position:absolute; top:500px; padding-top:20px; left:50%; margin-left:-700px; box-shadow:1px 2px 70px rgba(0,0,0,0.6); width:1400px; height:250px; background:#7f1dd2;  }
+				.attr_title span { position:absolute; text-align:center;  width:1400px; font-family:Noto Sans KR; font-size:30px; color:#f6ff00;  }
+/* 어트랙션 찾기*/	
+	#attr_content { position:absolute; top:100px; width:100%; height:80px;  }
+		.selTit { float:left; width:100px; height:50px; }
+			.selTit p { font-size:20px; color:#fff; text-align:center; line-height:50px; }
+			.value{ float:left; border-radius:40px; background:#fff; width:240px; height:50px; }
+				.value a { font-size:15px; font-weight:bold; color:#7f1dd2; line-height:50px; }
+					.jeon a { padding-left:20px; }
+					.sen a { padding-left:180px; }
+					.bo a{ padding-left:20px;}
+	#searchBtn { position:relative; top:180px; margin:0 auto; border-radius:40px; border:2px solid #fff; width:200px; height:50px; text-align:center; }
+		#searchBtn a { font-size:15px;  font-family:Noto Sans KR; color:#fff; line-height:50px; }
+		
+/* 어트랙션 상세 */
+#container { position:relative; width:100%; }
+	#attraction_list { position:absolute; top:250px; left:50%; margin-left:-700px;  width:1400px;  }
+		.photo { width:1400px; height:500px;  }
+			.photo ul { width:1240px; margin:0 auto; box-sizing:border-box; }
+				.photo li { float:left; padding-right:80px; }
+					.photo li:hover .text { background:#ae00ff; }
+					.photo li:hover p { color:#fff; }
+					.photo li:hover span { color:#fff; }
+						.photo .text { border:1px solid #ababab; height:120px; }
+						.photo li p { padding:20px 0px 10px 20px; font-size:18px; color:#555;   }
+							.photo li span { margin:20px; font-size:15px; color:#555;  }
+							.photo li:nth-child(4) { padding-right:0px; }
+/* 위로 버튼 */
+#up_Btn { position:absolute; bottom:-2170px; right:200px; }
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

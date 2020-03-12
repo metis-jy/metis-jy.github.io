@@ -1,0 +1,181 @@
+﻿@charset "utf-8";
+
+*{ margin:0; padding:0; }
+		li{ list-style:none; }
+		a { text-decoration:none; color:#555; }
+		img { border:0; }
+		address { font-style:normal;}
+		
+		body { font-size:15px;  }
+		
+		#popUp { position:absolute; left:50%; top:20%; margin-left:-225px; margin-top:-104px; width:450px; height:520px; border:3px solid #00a11d; cursor:pointer; box-shadow:5px 5px 5px #d0202d; z-index:200; }
+			.eventbutton1 { position:absolute; left:50%; top:80%; margin-left:-90.5px; width:181px; height:46px; overflow:hidden; }
+				.eventbutton { position:absolute; left:50%; top:80%; margin-left:-90.5px; width:181px; height:46px;  }
+			.eventbutton:hover { display:none; }
+				
+				/*{ background:url( images/event-button.png) no-repeat; position:absolute; left:50%; top:80%; margin-left:-90.5px;width:181px; height:46px; z-index:120; }*/
+			#popUp p { position:absolute; bottom:0px; right:0px; width:100%; height:40px; background:#e9e9e9; color:#333; font:bold 15px "고딕";  }
+				#popUp p:hover { background:#717171;  }
+				#popUp p a { position:absolute; bottom:0px; right:0px; margin-right:20px; line-height:40px; }
+					#popUp p:hover a {color:#fff; }
+			
+		
+		#wrapper { width:1190px; margin:0 auto;overflow:hidden;   /* */}
+		.main {  width:5950px; height:850px; } /*bg와 바로예약하기 전체 가로값*/
+		.bg { position:relative; float:left; }
+	
+			.bg1 { position:relative; left:0; top:0; background:url(../images/family-pension-text_1.jpg) no-repeat; background-size:1190px; width:1190px; height:850px; } 
+			.bg2 { position:relative; left:0; top:0; background:url(../images/winter-pension-2-text.jpg) no-repeat; background-size:1190px; width:1190px; height:850px; }
+			.bg3 { position:relative; left:0; top:0; background:url(../images/pension-88-text.jpg) no-repeat; width:1190px; height:794px; }
+			.bg4 { position:relative; left:0; top:0; background:url(../images/winter-pension-2-text.jpg) no-repeat; background-size:1190px; width:1190px; height:850px; }
+			.bg5 { position:relative; left:0; top:0; background:url(../images/family-pension-text.jpg) no-repeat; background-size:1190px; width:1190px; height:850px; } 
+			
+			
+			
+		#header { position:relative; width:1190px; height:100px; background-color:#fce457; background:rgba(252,258,87,0.5); } /*header 전체 노란색부분*/
+			#header h1 {  float:left; position:absolute; top:-20px;  } /*펜션로고*/
+				
+				.header-nav { position:absolute; right:0px; float:right; height:30px; z-index:200; } /*로그인 줄*/
+				.header-nav form { float:left;}
+				.header-nav .util { float:left;}
+				.util li { display:inline; padding-right:5px; font-family: 'Do Hyeon'; }
+					.header-nav .util li:hover a { color:#7e000c; }
+		
+		#gnbBack {display:none;  /**/position:relative; top:100px; left:0; width:1190px; height:200px; background-color:#fff;  z-index:100; } /*서브메뉴 흰상자*/
+		
+		ul#gnb { position:absolute; top:0px; left:0; width:1190px; height:150px; z-index:120; } 
+			ul#gnb h1 { float:left; margin-top:30px; } 
+			ul#gnb>li { float:left; width:120px; height:40px; position:relative; top:60px; left:180px; line-height:40px; }
+				ul#gnb>li>a {padding-top:10px;float:left;  width:120px; height:30px; text-align:center; font:bold 16px "Noto Sans KR"; color:#000;}
+					ul#gnb  li a { transition:all 0.4s;}/**/
+					ul#gnb>li>a:hover {  background-color:#0c7c0c; color:#fff; }
+			
+		/*sub메뉴 위치값*/		
+				ul#gnb>li .sub { float:left; position:relative; left:0; width:1140px; height:150px; background:rgba(252,255,255,0.9); }
+				ul#gnb>li .sub li { }
+					ul#gnb>li.menu1>ul { left:-180px; padding:30px 0px 0px 50px; }
+					ul#gnb>li.menu2>ul { left:-300px; padding:30px 0px 0px 50px; }
+					ul#gnb>li.menu3>ul { left:-420px; padding:30px 0px 0px 50px; }
+					ul#gnb>li.menu4>ul { left:-540px; padding:30px 0px 0px 50px; }
+					ul#gnb>li.menu5>ul { left:-660px;  padding:30px 0px 0px 50px; }
+					ul#gnb>li.menu6>ul { left:-780px; padding:30px 0px 0px 50px;  }
+					ul#gnb>li.menu7>ul { left:-900px; padding:30px 0px 0px 50px; }
+					
+										
+					.sub { display:none; }
+					.sub>li { float:left; margin-right:40px; z-index:100; /**/}
+								.menu1 .sub li a { float:left; width:150px; height:40px; padding-top:20px; text-align:center; color:#333; font:bold 12px "고딕";  }
+									
+									
+										
+								.menu2 .sub li a { float:left; width:150px; height:40px; color:#333; font:bold 12px "고딕"; text-align:center; }
+									#gnb li.menu2 ul.submenu a { font-size:12px; text-align:center; }
+								.menu3 .sub li a { float:left; width: 120px; height: 40px; padding-top:20px; color:#333; font:bold 12px "고딕"; text-align:center;}
+									#gnb li.menu3 ul.submenu a { font-size:12px; text-align:center; }
+								.menu4 .sub li a { float:left; width:150px; height:40px; padding-top:20px; color:#333; font:bold 12px "고딕"; text-align:center;}
+									#gnb li.menu4 ul.submenu a { font-size:12px; text-align:center; }
+								.menu5 .sub li a { float:left; width:150px; height:40px; padding-top:20px; text-align:center; color:#333; font:bold 12px "고딕"; }
+									#gnb li.menu5 ul.submenu a { font-size:12px; text-align:center; }
+								.menu6 .sub li a { float:left; width:150px; height:40px; padding-top:20px; color:#333; font:bold 12px "고딕"; text-align:center;}
+									#gnb li.menu6 ul.submenu a { font-size:12px; text-align:center; }
+								.menu7 .sub li a { float:left; width:150px; height:40px; padding-top:20px; color:#333; font:bold 12px "고딕"; text-align:center;}
+									#gnb li.menu7 ul.submenu a { font-size:12px; text-align:center; }
+						
+									.menu .sub > li > a:hover { color:#7e000c; border-bottom:2px solid #7e000c; }
+									.menu .sub > li:first-child > a:hover {color: #333; border-bottom: 0px; cursor: default;}
+		
+										
+			#content1 {  }
+				#sidepic { position:relative; top:-150px; left:30px; background:url(../images/sidebg.jpg) no-repeat ; background-size:700px;width:600px; height:150px; opacity:0.9;  }/*바로예약하기 메뉴*/	/**/
+				.sidemenu1 {  }/*바로예약하기*/
+					.reservation { position:relative; left:20px; top:60px; font-size:15px; }
+						.reservation a { font-size:18px; color:#fff; font-weight:bold; }
+					.room { font-size:13px; position:relative; left:150px; top:22px; }
+						.room a { color:#fff; font-weight:bold; }
+							.roombutton { width:100px; height:30px; margin-top:5px; padding:0 5px;  }
+					
+					.checkin { font-size:13px; position:relative; left:270px; top:-30px;}
+						.checkin a { color:#fff; font-weight:bold; }
+							.checkin img { display:none; }
+								.checkinbutton { width:100px; height:30px; margin-top:5px; padding:0 5px;  }
+								/*	.checkin:hover img { display:block; }*/
+					.checkout { font-size:13px; position:relative; left:390px; top:-82px; }
+						.checkout a { color:#fff; font-weight:bold; }
+							.checkoutbutton { width:100px; height:30px; margin-top:5px; padding:0 5px;  }
+					
+					.booking { position:relative; left:520px; top:-120px; text-align:center; line-height:50px; width:150px; height:50px; background:#a39d63; }
+						.booking a { color:#fff; font-weight:bold; }
+				
+				.sidemenu2 { width:1055px; height:400px; position:relative; left:70px; }	/*이벤트&패키지*/
+					.eventfont {float:left; text-align:center; position:relative; top:50%; left:50%; margin-top:-100px; margin-left:-75px; cursor:pointer; }
+						 .sidemenu2>div:hover .eventfont  { transform:scale(1.1); transition:all 0.5s; } 
+					
+					.event1 {clear:both; float:left;width:350px; height:370px; }
+						.event1:hover { transform:translate(-20px, -20px);  transition:all 0.5s; }
+					.event2 { float:left; width:350px; height:370px; }
+						.event2:hover { transform:translateY(-20px);  transition:all 0.5s; }
+					.event3 { float:right; width:350px; height:370px; padding-left:5px;  } 	
+						.event3:hover { transform:translate(20px, -20px);  transition:all 0.5s; }
+					
+				.sidemenu3 { width:1190px; height:270px;  position:relative; } /*information메뉴*/
+					.sidemenu3:hover .overlay { position: absolute; top:0px; left: 0px; width: 1190px; height: 270px; background-color: #000; opacity:0.7}
+					.kidspool { width:1190px; }
+						.info { position:relative; top:50%; left:50%; top:-250px; margin-left:-175px; }
+						
+							
+					.pictogram { position:relative; top:-250px; left:250px; } /*information 이모티콘*/
+					.emoticon li {  float:left; height:100px; }	
+						.quick1 img { padding-bottom:10px; width:66px; height:62px; text-align:center; display: table-cell; vertical-align:middle; padding:0 30px;  }
+							.quick1:hover img { transform:scale(1.1); }
+								.quick1 span { color:#fff; font-weight:bold; position:relative; top:80px; padding:0 30px; }
+									.quick1 a span:hover { color:#7e000c;}
+						.quick2 img { padding-bottom:10px; width:65px; height:65px; text-align:center; display: table-cell; vertical-align:middle;  padding:0 30px;  }
+							.quick2:hover img { transform:scale(1.1); }
+								.quick2 span { color:#fff; font-weight:bold; position:relative; top:80px; padding:0 30px; }
+									.quick2 a span:hover { color:#7e000c;}
+						.quick3 img { padding-bottom:10px; width:66px; height:62px; text-align:center; display: table-cell; vertical-align:middle;  padding:0 30px; }
+							.quick3:hover img { transform:scale(1.1); }
+								.quick3 span { color:#fff; font-weight:bold; position:relative; top:80px; padding:0 30px; }
+									.quick3 a span:hover { color:#7e000c;}
+						.quick4 img { padding-bottom:10px; width:44px; height:62px; text-align:center; display: table-cell; vertical-align:middle;  padding:0 35px;  }
+							.quick4:hover img { transform:scale(1.1); }
+								.quick4 span { color:#fff; font-weight:bold; position:relative; top:80px; padding:0 30px; }
+									.quick4 a span:hover { color:#7e000c;}
+						.quick5 img { padding-bottom:10px; width:68px; height:64px; text-align:center; display: table-cell; vertical-align:middle;  padding:0 30px;  }
+							.quick5:hover img { transform:scale(1.1); }
+								.quick5 span { color:#fff; font-weight:bold; position:relative; top:80px; padding:0 30px; }
+									.quick5 a span:hover { color:#7e000c;}
+									
+				.sidemenu4 { position:relative; width:1190px; height:250px; background:#f2f2f2; }
+					.notice { float:left; width:380px; height:250px;  }
+						.notice:nth-child(1) {border-right:2px solid #ccc;} 
+						.notice:nth-child(2) {border-right:2px solid #ccc;} 
+						.notice h2 {  font-size:25px; padding:15px 0 5px;  text-align:center;  }
+						
+					.gong { position:absolute; left:20px; }
+						.gong li { padding:15px 0; }
+							.gong li span { position:absolute; right:0; margin-right:20px; }
+							.gong li a:hover { text-decoration:underline; }
+							
+					.sns { position:absolute; left:405px; }
+						#sns { margin-left:100px; z-index:200; }
+							#sns p { position:absolute; left:0; top:150px; float:left;  width:380px; text-align:center; font:bold 15px  "Noto Sans KR"; color:#333; }
+								#sns p:hover a { color:#910d0d; font-size:16px; transition:all 0.5s; }
+						#sns li { float:left; margin-right:30px; margin-top:20px; display:inline-block;    }
+							#sns .fa { font-size:20px; color:#f17f7e; opacity:0.5; transform:scale(1); transition:all 0.5s; }
+								#sns .fa:hover { opacity:1; transform:scale(1.4); }
+								
+					.weather { position:absolute; left:790px; }
+						figure { position:absolute; top:70px; width:380px;  text-align:center; z-index:200; }
+							figure p { font-size:20px; font-weight:bold; color:#333; }
+						.weather img { position:absolute; left:8px; top:50px; width:380px; height:200px; cursor:pointer; }
+			
+			#footer { clear:both; }
+				.bottomlogo { height:40px; font-size:10px; text-align:center;  }
+					#footsns {float:right;  position:relative; top:-20px; }
+					#footsns li {  margin-right:30px; margin-top:0px;  }
+					#footsns .fa { font-size:20px; color:#910d0d; opacity:0.5; transform:scale(0.8); transition:all 0.5s; }
+					#footsns .fa:hover { opacity:1; transform:scale(1.4); }
+						#foot ul { margin-left:400px; padding-top:10px;  }
+							#foot li { float:left; font-size:12px; margin-top:20px; }
+									address { clear:both; width:1200px; text-align:center; font-family:고딕; font-size:14px; line-height:1.6em; padding:20px 0 10px 0 ;}

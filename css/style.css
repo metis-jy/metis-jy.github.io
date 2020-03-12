@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0;}
+body { font:12px/1.6 arial; color:#555; } 
+
+/*로고*/
+h1 { position:fixed; top:50px; left:50px; z-index:10;}
+h1 img { width:200px; height:auto;}
+
+/*sns*/
+#sns { position:fixed; top:40px; right:50px; z-index:14;}
+#sns li { float:left; margin-left:20px;}
+#sns li i { font-size:25px; color:#111; opacity:0.5;transition:all 0.5s;}
+#sns li i:hover { transform:scale(1.5); opacity:1;}
+
+/*메뉴*/
+#menu { position:fixed; top:50%; left:0px; margin-top:-100px; z-index:13;}
+#menu a { display:block; width:200px; height:60px; font-family:righteous; font-size:14px; color:#000; text-align:right; overflow:hidden; box-sizing:border-box;  border-top:1px solid #111;  opacity:0.8; transition:all 0.5s;}
+#menu li:hover a { font-size:24px;  opacity:1; }
+#menu li.on a { font-size:24px; opacity:1;}
+
+#menu li:nth-child(1):hover a { color:#6c140d; border-color:#6c140d;}
+#menu li:nth-child(2):hover a { color:#b56a3a; border-color:#b56a3a;}
+#menu li:nth-child(3):hover a { color:#486255; border-color:#486255;}
+#menu li:nth-child(4):hover a { color:#ad3f49; border-color:#ad3f49;}
+
+#menu li:nth-child(1).on a { color:#6c140d; border-color:#6c140d;}
+#menu li:nth-child(2).on a { color:#b56a3a; border-color:#b56a3a;}
+#menu li:nth-child(3).on a { color:#486255; border-color:#486255;}
+#menu li:nth-child(4).on a { color:#ad3f49; border-color:#ad3f49;}
+
+
+/*레이아웃*/
+section { width:100%; height:700px; position:relative; background-size:cover; background-position:center center; background-attachment:fixed; overflow:hidden;} /*  height:700px;은 브라우저의 높이가 700보다 클 경우 하단에 다른 페이지의 이미지가 보이고, 작을경우에는 해당 영역의 이미지가 자려 보이므로  height:100%;정도로 해두고 나중에 제이쿼리에서 페이지의 높이값을브라우저의 높이값으로 강제지정한다. */
+section:nth-child(1) { background-color:#dfcfc0; }
+section:nth-child(2) { background-color:#e9cab5; }
+section:nth-child(3) { background-color:#d9b487; }
+section:nth-child(4) { background-color:#e9e2e0; }
+
+
+/*텍스트 박스*/
+article { z-index:11;}
+article p { position:absolute; font-family:righteous; font-size:50px; letter-spacing:2px; line-height:1; left:300px; transition:all 0.8s; }
+article span { position:absolute; font-size:16px; left:300px;transition:all 0.8s 0.2s;  }
+section:nth-child(1) p { color:#6c140d; top:-10%;  }
+section:nth-child(1) span { color:#e8e0de; top:-60%; left:40%; font-size:200px; font-family:righteous; letter-spacing:40px;  }
+section:nth-child(2) p { color:#b56a3a; bottom:-10%; }
+section:nth-child(2) span { color:#ad3f49; bottom:-10%; }
+section:nth-child(3) p { color:#486255; bottom:-10%; }
+section:nth-child(3) span { color:#ffec6a; bottom:-10%; }
+section:nth-child(4) p { color:#ad3f49; bottom:-10%; }
+section:nth-child(4) span { color:#111; bottom:-10%; }
+
+section:nth-child(1).on p { top:20%;  }
+section:nth-child(1).on span { top:30%; left:40%; }
+section:nth-child(2).on p { bottom:78%; }
+section:nth-child(2).on span { bottom:75%; }
+section:nth-child(3).on p { bottom:75%; }
+section:nth-child(3).on span { top:73%; }
+section:nth-child(4).on p { bottom:75%; }
+section:nth-child(4).on span { bottom:73%; }
+
+
+/* portfolio 디테일 */
+.contents  { position:absolute; top:0px; left:0px; width:100%; height:100%; }
+.contents .pp { position:relative; width:14%; height:100%; float:right; overflow:hidden; background:url(../img/line_h.jpg) no-repeat; /* outline:1px solid yellow; */ }  /* float:right; -- 첫번째 portfolio부터 오른쪽에 배치. */
+
+/* portfolio 제목 */
+.contents .pp h2 { position:absolute; top:300px; left:50%; padding-left:15px;	border-left:3px solid #555; font:bold 20px Raleway; color:#666; z-index:3; transition:all 0.2s; }
+.contents .pp div { position:absolute; left:0px; top:300px; width:100%; height:0px; background:#dfcfc0; opacity:1.5; z-index:2; transition:all 0.7s ; }
+
+/* portfolio 제목 호버 효과 */
+.contents .pp:hover h2 { color:#fff; border-left:3px solid #fff; left:20px; }
+.contents .pp:hover>div { top:270px; height:70px;}
+
+
+/* portfolio 이미지 */
+.pp img { position:absolute; width:auto; height:150%; margin-top:-100px; margin-left:-100px; opacity:0; z-index:1; }
+
+/* portfolio 숨겨진 컨텐츠 */
+.contents .pp h3 {  position:absolute; bottom:210px; right:-310px; font: 40px Raleway; color:#fff; text-align:right; opacity:1; z-index:4; }
+.contents .pp p { position:absolute;bottom:50px; right:-310px; width:300px; height:150px; font:12px/1.5 Raleway; color:#fff; text-align:right; opacity:0.8; z-index:5; }
+.detail p.text { position:absolute; top:450px; right:-310px; width:100%; height:30px; font:15px/2 돋움; color:#000; font-weight:bold; text-align:right; opacity:2; z-index:100; }
+.detail p.textBtn { position:absolute; top:470px; right:-310px;  width:100%; height:30px; font:15px/2 Raleway; color:#000; text-align:right;  z-index:101;  }
+
+/*view 버튼*/
+	.btn-box span { background:#000; opacity:0.6;  }
+	.btn-box span.btn_web { position:absolute; text-align:center; top:200px;  right:-310px; color:#fff; width:100px; height:40px; line-height:40px; z-index:200;  /* border:1px solid #000;  */}
+	.btn-box span.btn_sub  {  position:absolute; top:200px; right:-310px; text-align:center; color:#fff; width:100px; height:40px; line-height:40px; z-index:200; /*  border:1px solid #000; */ }
+	
+		.btn-box :hover { background:#fff; opacity:1; }
+		.btn-box :hover span { color:#000; opacity:1; }
+
+/* contact 디테일 */
+.contact_profile h2{ font-size:30px; letter-spacing:10px; color:#111;  }
+.con_txt { font:bold 25px Raleway; padding:20px 0px; color:#111;  }
+.con_txt_2 { font:bold 22px Raleway; padding:10px 0px; color:#111; }
+.con_profile a { font:bold 22px Raleway;  }
+.con_profile a:hover { color:#ad3f49; }
+article .contact_profile { position:absolute; left:300px;transition:all 0.8s 0.2s; }
+section .contact_profile { color:#111; bottom:-30%; }
+section.on .contact_profile  { bottom:45%; }
+
+
+
+
+

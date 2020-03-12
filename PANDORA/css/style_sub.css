@@ -1,0 +1,152 @@
+﻿@charset "utf-8"; 
+@import url(http://fonts.googleapis.com/css?family=Righteous);
+
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#555; }
+img { border:0;}
+body { font:12px/1.6 arial; color:#555; } 
+input, img { vertical-align:center; }
+	
+#wrapper { position:relative; width:100%; height:auto; outline:10px solid black; }
+
+/* header */
+/*  header 로고 */
+#header { position:relative; width:100%; height:150px; background:rgba(245,245,245,1); z-index:99;  }	
+	#header h1 { height:100px; text-align:center; border:2px solid #eee; }
+		#header h1 a { z-index:999;  }
+		#header h1 img { width:250px; margin-top:20px; z-index:99999;}/* 로고크기 */
+		.header-nav { float:right; }/* 로그인 줄*/
+		.search input[type="text"] { position:absolute; left:1300px; top:30px;  width:260px; height:36px; background:#fff; border:none; margin-top:7px; padding-left:20px; }
+			.search_box {  width:100%; height:100px;  }
+				#search_img { position:absolute; top:40px; left:1600px; }
+					.search li { float:left; font-size:20px; padding-right:20px; transition:all 0.2s; }
+						.search li:hover { transform:scale(1.2); }
+
+/*  header 주메뉴 */							
+	.menuBack { position:absolute; left:0px; width:100%; height:300px; z-index:-99999; background:#eee; display:none;/*  */}  
+	
+	#gnb_nav { position:relative; width:100%; height:46px; z-index:10000; /*outline:2px solid orange; */ }
+	#gnb { width:1000px; margin:0 auto; z-index:10000;}
+		#gnb>li { float:left; width:125px; height:46px; line-height:46px; font-family:Nanum Gothic;  } /* 주 메뉴 */
+			#gnb>li span { font-size:14px; text-align:center; display:block; transition:all 0.5s;   }
+				#gnb>li:hover span { background:#fff; }
+	#gnb .sub { position:relative; width:100%; height:300px; background:#eee; z-index:10000;  } /* 하위 메뉴*/
+		#gnb .sub ul { float:left; width:250px; height:300px;  }
+			#gnb .sub ul:nth-child(1) { margin-left:450px; }
+				#gnb>li a { font-size:12px; font-family:Nanum Gothic; }
+					.sub ul li a { padding-left:43px; }
+		#gnb .sub_1 {  }	
+		#gnb .sub_2 { position:absolute; left:0px; }	
+		#gnb .sub_3 { position:absolute; left:0px; }
+		#gnb .sub_4 { position:absolute; left:0px; }	
+		#gnb .sub_5 { position:absolute; left:0px; }	
+		#gnb .sub_6 { position:absolute; left:0px; }	
+		#gnb .sub_7 { position:absolute; left:0px; }	
+		#gnb .sub_8 { position:absolute; left:0px; }
+			.sub_1 .navigation_image .stacking{ background:url(../img/stacking_1.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 5px rgba(0,0,0,0.5); }	
+			.sub_2 .navigation_image .cham { background:url(../img/cham_2.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }	
+			.sub_3 .navigation_image .ring { background:url(../img/ring_3.jpg)no-repeat center center/cover;position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px;  box-shadow:1px 1px 10px rgba(0,0,0,0.5); }		
+			.sub_4 .navigation_image .bangle { background:url(../img/bangle_4.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }	
+			.sub_5 .navigation_image .neck { background:url(../img/neck_5.jpg)no-repeat center center/cover;position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px;  box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+			.sub_6 .navigation_image .earring { background:url(../img/earring_6.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px;  box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+			.sub_7 .navigation_image .gift { background:url(../img/gift_7.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+			.sub_8 .navigation_image .club { background:url(../img/club_8.jpg)no-repeat center center/cover; position:absolute; left:1200px; width:350px; height:245px; margin-top:27.5px; box-shadow:1px 1px 10px rgba(0,0,0,0.5); }
+				
+		 .sub_1, .sub_2, .sub_3, .sub_4, .sub_5, .sub_6, .sub_7, .sub_8 { display:none; }
+	
+/* slider */	
+#container { position:relative; top:0px; width:100%; height:3200px; z-index:1; outline:10px solid red; }
+/* 첫 화면 슬라이드 이미지 */
+#slider1 { width:100%; height:760px; }
+#slider1>div { position:absolute; }
+#slider1>div img { width:100%; }
+/* 중간 그녀 글자 */	
+#her_txt { position:relative; background:url(../img_sub/her_bg.jpg); opacity:0.8; width:100%; height:200px;  }
+	#her_txt h3 { position:absolute; top:50px; left:200px; color:#000; font:bold 30px "poiret one"; letter-spacing:-1px; z-index:500; }
+	#her_txt span { position:absolute; top:90px; left:200px; color:#000; font-family: sans-serif; font-size:15px; letter-spacing:5px; }
+	#her_txt h2 { position:absolute; left:650px; top:50px; color:#000; font-family: sans-serif; font-size:25px; }
+	#her_txt p { position:absolute; left:650px; top:100px; color:#000; font:bold 16px "sans-serif"; }
+	#her_txt img { padding:0 10px; width:12px; }
+	
+/* 판도라속 매거진 */
+#gift_pic { position:relative; width:100%; height:100%; }
+	#gift_pic h1 { position:absolute; padding-left:40px;  font:bold 40px "poiret one"; z-index:100; color:#c28e83; letter-spacing:-3px; }
+	#gift_pic span { font-size:70px; z-index:999; text-shadow:5px 5px 5px #4e4e4e; color:#C6426E }		
+	.magazine {  background:url(../img_sub/gift_pic_33.jpg)no-repeat; background-attachment:fixed; min-height:100%; opacity:0.9;  }	
+
+/* 악세사리 */
+		.access_1 { position:absolute; top:1500px; left:200px; z-index:9999; opacity:1; }
+		.access_2 { position:absolute; top:1600px; left:1200px; z-index:9999; opacity:1; }
+		.access_3 { position:absolute; top:1550px; left:500px; z-index:9999; opacity:1; }
+		.access_4 { position:absolute; top:1300px; left:900px; z-index:9999; opacity:1; }
+		.access_5 { position:absolute; top:1450px; left:1550px; z-index:9999; opacity:1; }
+		.access img { width:150px; }
+	
+/* 기념일 선물 */
+#Present { position:absolute; top:2000px; opacity:1; width:100%; height:2500px; background:#fff; /* background:url(../img_sub/Present_bg_2.jpg)no-repeat center center/cover; */ }	
+#Present  h3 { font:bold 80px "poiret one";  }
+	.gift_img a { font:bold 100px "poiret one"; color:#fff; text-shadow:5px 5px 8px #000; }
+	.gift_img1 { position:absolute; top:400px; left:650px; z-index:999; }
+	.gift_img2  { position:absolute; top:900px; left:770px; z-index:999; }
+	.gift_img3  { position:absolute; top:1550px; left:750px; z-index:999; }
+	.gift_1 { transition:all .5s;  }
+	.gift_2 { transition:all .5s;  }
+	.tent1 { position:absolute; left:200px; top:100px;  width:800px; height:500px; overflow:hidden; }
+	.tent2 { position:absolute; left:900px; top:150px; width:800px; height:500px; overflow:hidden;  }
+	.tent3 { position:absolute; left:200px; top:700px; width:800px; height:500px; overflow:hidden;  }
+	.tent4 { position:absolute; left:900px; top:750px; width:800px; height:500px; overflow:hidden;  }
+	.tent5 { position:absolute; left:200px; top:1300px; width:800px; height:500px; overflow:hidden;  }
+	.tent6 { position:absolute; left:900px; top:1350px; width:800px; height:500px; overflow:hidden;  }
+	.gift_1:hover  { transform:scale(1.1); }
+	.gift_2:hover  { transform:scale(1.1); }
+	.valen_img  {  }
+	.valen_img .gift_1 { position:absolute; left:0px; top:0px; width:800px; height:500px; background:url(../img_sub/gift_valent_img.jpg); z-index:99; }
+	.valen_img .gift_2 { position:absolute; left:0px; top:0px; width:800px; height:500px; background:url(../img_sub/gift_valent_img2.jpg); }
+		
+	.birth_img .gift_1 { position:absolute; left:0px; top:0px; width:800px; height:500px; background:url(../img_sub/gift_birth_img2.jpg)no-repeat;z-index:99; }
+	.birth_img .gift_2 { position:absolute; left:0px; top:0px; width:800px; height:500px; background:url(../img_sub/gift_birth_img.jpg)no-repeat; }
+		
+	.wedding_img .gift_1 { position:absolute; left:0px; top:0px; width:800px; height:500px; background:url(../img_sub/gift_wedding_img.jpg)no-repeat; z-index:99; }
+	.wedding_img .gift_2 {  position:absolute; left:0px; top:0px; width:800px; height:500px; background:url(../img_sub/gift_wedding_img2.jpg)no-repeat; } 
+
+/* 모달검정창-발렌타인 */
+	div.black { width:100%; height:100%; position:absolute; left:0; top:0; background:rgba(0,0,0,0.6); z-index:50000; display:none; }
+/*그림이 보여질 창 */
+	div.myWin { position:absolute; z-index:1000000; width:500px; height:700px; left:50%; top:5%; margin-left:-250px; display:none; }
+		p.close { text-align:right; padding-right:10px; }
+		p.close img { position:absolute; top:0px; right:0px; width:30px; padding:10px; }
+			.myWin h1 { font:bold 35px "poiret one"; width:350px; padding-left:10px;  }			
+			.myWin .val_txt a { position:absolute; top:15px; height:30px; left:360px; font-size:14px; width:50px; }	
+			.myWin .val_txt a:hover  { text-decoration:underline; }
+			.myWin .val_txt img { width:12px; position:absolute; top:5px; padding-left:5px; }
+		.myWin .modal_buy { position:absolute; padding:10px 40px; background:#c28e83; right:156px; top:650px; font:bold 15px "poiret one"; color:#111;}
+		.myWin .modal_buy:hover { color:#fff; }
+		
+/* 제품 */ 
+#product { position:absolute; top:4000px; width:100%; height:600px; background:#f5f5f5; }	
+#product section { padding:30px; text-align:center; box-sizing:border-box; }
+#product p { margin-bottom:10px; font-size:14px; }
+#product p span { font-weight:bold; font-size:15px; }
+#product h2 { letter-spacing:5px; font-size:20px; }
+	.pro_school { position:absolute; left:260px;  }
+	.pro_mama { position:absolute; left:730px; }
+	.pro_friendship { position:absolute; left:1200px; }
+	.product_buy { position:absolute; padding:10px 40px; background:#c28e83; left:115px; top:400px; font:bold 15px "poiret one"; color:#111;}
+	.product_buy:hover { color:#fff; }
+	
+#footer { position:relative; top:350px ;width:100%; height:100px; background:#f5f5f5; border-top:1px solid #fff; } 
+	.foot { position:absolute; width:100%; height:100px; background:#f7f7f9; }
+	#footer  h1 { float:left; position:absolute; left:500px; width:100px; margin-top:20px; }
+	#footer  h1 img { width:40px; }
+	address { font-style:normal; text-align:center;  font-size:14px; padding:20px 0px; z-index:100;  }
+/* sns */	
+	#sns { position:absolute; top:50px; right:400px;  }
+	#sns li  { float:left; padding:10px; }
+	#sns li i { font-size:20px; color:#111; opacity:0.7; transition:all 0.5s;}
+	#sns li i:hover { transform:scale(1.2); opacity:1; color:#C6426E; }
+
+
+
+
