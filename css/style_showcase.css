@@ -53,4 +53,8 @@ e(1); }
 .box2 div:nth-child(7) { width:25%; background:url(../img/nature10.jpg) no-repeat center center/cover;}
 .box2 div:nth-child(8) { width:25%; background:url(../img/flower3.jpg) no-repeat center top/cover;}
 .box2 div:nth-child(9) { width:25%; background:url(../img/flower2.jpg) no-repeat center center/cover;}
-.box2 div:nth-child(10) { width:25%; background:url(../img/nature1.jpg) no-repeat center center/cover;}
+
+.box2 div:nth-child(10) { 
+    width:25%; 
+    background:url(../img/nature1.jpg) no-repeat center center/cover;
+}
